@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mascotashop</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <a href="./" class="logo"
+                    ><img src="./assets/img/logo.png" alt="Logo del Sitio"
+                /></a>
+            </div>
+            <div id="menu" class="menu">
+                <nav class="nav">
+                    <a class="nav__link" href="./" title="Home">Home</a>
+                    <a class="nav__link" href="#queSomos" title="¿Qué Somos?"
+                        >¿Qué Somos?</a
+                    >
+                    <a class="nav__link" href="#instalar" title="Instalar"
+                        >Instalar</a
+                    >
+                    <a
+                        class="nav__link nav__link--mobile"
+                        href="#Dinos"
+                        title="Dinos Guau!"
+                        >Dinos Guau!</a
+                    >
+                    <a
+                        class="nav__link nav__link--desktop"
+                        href="#Dinos"
+                        title="Dinos Hola!"
+                        >Dinos Hola!</a
+                    >
+                </nav>
+                <div class="social">
+                    <a
+                        class="social__link fa fa-facebook-square"
+                        href="./"
+                        title="Pagina de Facebook"
+                    ></a>
+                    <a
+                        class="social__link fa fa-instagram"
+                        href="./"
+                        title="Perfil de Instagram"
+                    ></a>
+                </div>
+            </div>
+            <div id="menuMobile" class="menu-mobile">
+                <a
+                    onclick="document.querySelector('#menu').classList.toggle('show');document.querySelector('#menuMobile').classList.toggle('show');"
+                    class="menu-mobile__link"
+                >
+                    <i class="fas fa-bars open"></i>
+                    <i class="fas fa-times close"></i>
+                </a>
+            </div>
+        </header>
+        <main>
+            <section id="mainSection" class="section main-section">
+                <div class="hero">
+                    <h1 class="hero__title">
+                        La Mejor App Para Consentir a
+                        <span>Tu Mascota</span>
+                    </h1>
+                    <div class="hero__text">
+                        <p>
+                            En <b>MascotaShop</b> puedes encontrar todo lo que
+                            hará feliz a tu mascota... sin tener que salir de tu
+                            casa!
+                        </p>
+                    </div>
+                    <div class="hero__link">
+                        <a href="#instalar" class="primary-button">Instalar!</a>
+                    </div>
+                </div>
+                <div class="install-app__buttons">
+                    <div class="install-app__wrap">
+                        <a href="#" class="install-app__button">
+                            <img
+                                class="install-app__img"
+                                src="./assets/img/svg/btn_google.svg"
+                                alt="Disponible en Google Play"
+                            />
+                            <img
+                                class="install-app__img install-app__img--hover"
+                                src="./assets/img/svg/btn_google_color.svg"
+                                alt="Disponible en Google Play"
+                            />
+                        </a>
+                    </div>
+                    <div class="install-app__wrap">
+                        <a href="#" class="install-app__button">
+                            <img
+                                class="install-app__img"
+                                src="./assets/img/svg/btn_ios.svg"
+                                alt="Disponible en App Store"
+                            />
+                            <img
+                                class="install-app__img install-app__img--hover"
+                                src="./assets/img/svg/btn_ios_color.svg"
+                                alt="Disponible en App Store"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="banner__img">
+                    <img
+                        src="./assets/img/svg/hero.svg"
+                        alt="Dibujo de Mascotas en MascotaShop"
+                    />
+                </div>
+                <div class="banner__form">
+                    <form action="/">
+                        <label class="banner__form__title" for="correo">
+                            ¡Suscríbete y recibe las novedades de
+                            <span>MascotaShop!</span>
+                        </label>
+                        <input
+                            type="email"
+                            name="correo"
+                            id="correo"
+                            placeholder="Ingresa tu correo"
+                            class="banner__form__input"
+                        />
+                        <input
+                            type="submit"
+                            name="suscribirse"
+                            id="suscribirse"
+                            value="Suscribirse"
+                            class="banner__form__submit"
+                        />
+                    </form>
+                </div>
+            </section>
+            <div class="que-somos-bg">
+                <section id="queSomos" class="section que-somos-section">
+                    <div class="que-somos__items">
+                        <div class="item que-somos__info">
+                            <h2 class="que-somos__title">
+                                ¿Qué es Mascota Shop?
+                            </h2>
+                            <p class="que-somos__text">
+                                <b>MascotaShop</b> es una aplicación móvil hecha
+                                para consentir a tu mascota, porque sabemos que
+                                son parte escencial de tu familia! <br />
+                                Te presentamos algunos de sus beneficios.
+                            </p>
+                        </div>
+                        <span class="item">
+                            <i class="item__number">1</i>
+                            <img
+                                class="item__img"
+                                src="./assets/img/svg/icon_1.svg"
+                                alt="Icon"
+                            />
+                        </span>
+                        <span class="item">
+                            <i class="item__number">2</i>
+                            <img
+                                class="item__img"
+                                src="./assets/img/svg/icon_2.svg"
+                                alt="Icon"
+                            />
+                        </span>
+                        <span class="item">
+                            <i class="item__number">3</i>
+                            <img
+                                class="item__img"
+                                src="./assets/img/svg/icon_3.svg"
+                                alt="Icon"
+                            />
+                        </span>
+                        <span class="item">
+                            <i class="item__number">4</i>
+                            <img
+                                class="item__img"
+                                src="./assets/img/svg/icon_4.svg"
+                                alt="Icon"
+                            />
+                        </span>
+                        <span class="item">
+                            <i class="item__number">5</i>
+                            <img
+                                class="item__img"
+                                src="./assets/img/svg/icon_5.svg"
+                                alt="Icon"
+                            />
+                        </span>
+                    </div>
+                </section>
+            </div>
+            <div class="install-bg">
+                <section id="install" class="section install-section">
+                    <div class="install__wrap">
+                        <div class="wrap-left">
+                            <div class="install__img">
+                                <img
+                                    src="./assets/img/phones.png"
+                                    alt="Dibujo de Celulares"
+                                />
+                            </div>
+                            <div class="install-app__buttons">
+                                <div class="install-app__wrap">
+                                    <a href="#" class="install-app__button">
+                                        <img
+                                            class="install-app__img"
+                                            src="./assets/img/svg/btn_google.svg"
+                                            alt="Disponible en Google Play"
+                                        />
+                                        <img
+                                            class="
+                                                install-app__img
+                                                install-app__img--hover
+                                            "
+                                            src="./assets/img/svg/btn_google_color.svg"
+                                            alt="Disponible en Google Play"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="install-app__wrap">
+                                    <a href="#" class="install-app__button">
+                                        <img
+                                            class="install-app__img"
+                                            src="./assets/img/svg/btn_ios.svg"
+                                            alt="Disponible en App Store"
+                                        />
+                                        <img
+                                            class="
+                                                install-app__img
+                                                install-app__img--hover
+                                            "
+                                            src="./assets/img/svg/btn_ios_color.svg"
+                                            alt="Disponible en App Store"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap-right">
+                            <div class="install__text">
+                                <p>
+                                    Disfruta de todos los beneficios que solo
+                                    MascotaShop te brinda para tu comodidad y la
+                                    de tu mascota, todo en la palma de tu mano.
+                                </p>
+                                <p>
+                                    Instálala y entérate por tí mismo de todas
+                                    las funciones.
+                                </p>
+                            </div>
+                            <div class="install__img-2">
+                                <img
+                                    src="./assets/img/svg/app_2.svg"
+                                    alt="Dibujo de la App"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer section">
+            <div class="footer__img">
+                <img src="./assets/img/svg/pet.svg" alt="Mascota saludando" />
+            </div>
+            <div class="footer__form">
+                <h3 class="footer__title"><i class="far fa-envelope"></i> Info@MascotaShop.pet</h3>
+                <form action="/">
+                    <label class="footer__label" for="mensaje">Mensaje</label>
+                    <textarea
+                    class="footer__message"
+                    name="mensaje"
+                    id="mensaje"
+                    cols="30"
+                    rows="10"
+                    ></textarea>
+                    <span class="footer__wrap">
+                        <label class="footer__label" for="nombre">Nombre</label>
+                        <input class="footer__input" type="text" name="nombre" id="nombre" />
+                    </span>
+                    <span class="footer__wrap">
+                        <label class="footer__label" for="correoMensaje">Correo</label>
+                        <input class="footer__input"
+                            type="email"
+                            name="correoMensaje"
+                            id="correoMensaje"
+                        />
+                    </span>
+                    <span class="footer__wrap--submit"><input class="footer__submit" type="submit" name="enviar" id="enviar" value="Enviar &#xf1d8;"/></span>
+                </form>
+            </div>
+        </footer>
+        <script
+            src="https://kit.fontawesome.com/7cc7c66608.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
