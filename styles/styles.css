@@ -723,6 +723,9 @@ header {
     width: auto;
   }
 }
+.footer__submit i {
+  margin-left: 5px;
+}
 .footer__submit:hover {
   font-family: "FontAwesome", "Proxima Nova Bold";
 }/*# sourceMappingURL=styles.css.map */
